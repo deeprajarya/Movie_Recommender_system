@@ -1,86 +1,59 @@
 # Movie-Recommender-System
-A Web Base user-item Movie Recommendation Engine using Collaborative Filtering By matrix factorizations algorithm and
-The recommendation based on the underlying idea that is if two persons both liked certian common movies,then the movies that one person has liked that the other person has not yet watched can be recommended to him.   
-### Screenshot
+A web-based user-item Movie Recommendation Engine using cosine similarity. The recommendation is based on the idea that if a user enters the name of a movie they like, the application will recommend 5 similar movies. The underlying assumption is that if the user enjoyed the movie they entered, they might also enjoy the recommended movies.
 
-###### Home page
-![home](https://user-images.githubusercontent.com/20842692/45380125-941d7500-b61f-11e8-852d-c09e9586b35b.png)
+## Features
+- **User-Friendly Interface**: Select a movie from a list and get recommendations at the click of a button.
+- **Cosine Similarity**: Uses cosine similarity to find movies that are similar to the one selected by the user.
+- **Movie Posters**: Displays movie posters along with the titles for a better user experience.
 
-###### Recommendation page
-![recom](https://user-images.githubusercontent.com/20842692/45380167-b57e6100-b61f-11e8-8ec0-e07c26daa4a3.jpg)
+## Screenshot
+*(Add a screenshot here to showcase the interface and recommendations)*
 
-###### Rating page
-![rate](https://user-images.githubusercontent.com/20842692/45380186-be6f3280-b61f-11e8-8ad6-8b967d1cba1a.png)
+### Prerequisites
+Ensure you have the following installed:
+- Python 3.6 or higher
+- pip3
+- virtualenv
 
-### Technologies Used
+### Steps
+1. **Clone the Repository**:
+    ```sh
+    git clone https://github.com/deeprajarya/Movie-Recommender-System.git
+    cd Movie-Recommender-System
+    ```
 
-#### Web Technologies
-Html , Css , JavaScript , Bootstrap , Django
+2. **Create and Activate a Virtual Environment**:
+    ```sh
+    virtualenv env
+    source env/bin/activate  # On Windows, use `env\Scripts\activate`
+    ```
 
-#### Machine Learning Library In Python3
-Numpy , Pandas , Scipy
+3. **Install the Dependencies**:
+    ```sh
+    pip install -r requirements.txt
+    ```
 
-#### Database
-SQLite
+4. **Run the Application**:
+    ```sh
+    streamlit run movie_recommend.py
+    ```
 
-##### Requirements
-```
-python 3.6
+### Machine Learning Libraries in Python
+The project utilizes the following libraries:
+- **Numpy**: For numerical computations.
+- **Pandas**: For data manipulation and analysis.
+- **streamlit**: For web-application.
 
-pip3
+### Contributing
+Contributions are welcome! Please follow these steps to contribute:
 
-virtualenv
-```
-##### Setup to run
+### Fork the repository
+Create a new branch: git checkout -b feature/your-feature-name.
+Commit your changes: git commit -m 'Add some feature'.
+Push to the branch: git push origin feature/your-feature-name.
+Open a pull request.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Extract zip file in your computer
-
-Open terminal/cmd promt
-
-Goto that Path
-
-Example
-
-```
-cd ~/Destop/Movie-Recommender-System
-```
-Create a new virtual environment on that directory
-
-```
-virtualenv .
-```
-
-Activate Your Virtual Environment
-
-for Linux
-```
-source bin/activate
-```
-for Windows
-```
-cd Scripts
-then
-activate
-```
-To install Dependencies
-
-```
-pip install -r requirements.txt
-```
-
-### Creating Local Server
-
-Goto src directory, example
-
-```
-cd ../Movie-Recommender-System/src
-```
-To run
-```
-python manage.py runserver
-```
-Now open your browser and go to this address
-```
-http://127.0.0.1:8000
-```
-Thank you for visiting my repository.
+### Feedback
+We value your feedback! If you have any suggestions, issues, or improvements, please open an issue on the repository or contact us directly.
