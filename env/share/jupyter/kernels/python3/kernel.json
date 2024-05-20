@@ -1,0 +1,14 @@
+{
+ "argv": [
+  "c:/0_PersonalProjects/Movie_Recommender_system/env\\python.exe",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "{connection_file}"
+ ],
+ "display_name": "Python 3 (ipykernel)",
+ "language": "python",
+ "metadata": {
+  "debugger": true
+ }
+}

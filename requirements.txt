@@ -1,0 +1,9 @@
+pandas
+numpy
+scikit-learn
+nltk
+
+classifier
+streamlit
+bs4
+PIL

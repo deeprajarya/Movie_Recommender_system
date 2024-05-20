@@ -1,0 +1,12 @@
+prefix=c:/0_PersonalProjects/Movie_Recommender_system/env/Library
+exec_prefix=c:/0_PersonalProjects/Movie_Recommender_system/env/Library
+libdir=c:/0_PersonalProjects/Movie_Recommender_system/env/Library/lib
+includedir=c:/0_PersonalProjects/Movie_Recommender_system/env/Library/include
+
+Name: libzmq
+Description: 0MQ c++ library
+Version: 4.3.5
+Libs: -L${libdir} -lzmq
+Libs.private: -lstdc++ 
+Requires.private: 
+Cflags: -I${includedir} 
